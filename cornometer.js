@@ -15,7 +15,7 @@ var cornometer = /** @class */ (function () {
             throw new Error("The cornometer already stopped");
         //this._duration+=1;
         this._duration = this._currentTime + this._duration;
-        this.show;
+        this.show();
         this._status = "stopped";
     };
     // public checkStatus() : string {
@@ -98,21 +98,3 @@ function creatCornometerDOM(list, index) {
 });
 var objectNumber = 0;
 var listofObjects = new Array;
-// const c1 = new cornometer();
-// listofObjects.push(c1);
-// creatCornometerDOM(c1, objectNumber);
-// objectNumber++;
-// //creatCornometerDOM(c1, objectNumber);
-// const c2 = new cornometer();
-// listofObjects.push(c2);
-// creatCornometerDOM(c1, objectNumber);
-// objectNumber++;
-//creatCornometerDOM(c2, objectNumber);
-// while (true) {
-//     for (let i = 0; i < objectNumber; i++) {
-//         const showElement = document.getElementById(`showTime${i}`);
-//         const value :string = `${listofObjects[i].checkStatus()}`;
-//         showElement?.innerText === value;
-//     }
-//     //l++;
-// }
