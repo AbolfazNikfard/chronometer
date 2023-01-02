@@ -53,8 +53,6 @@ var cornometer = /** @class */ (function () {
         stopBtn.innerText = "Stop";
         stopBtn.addEventListener("click", function () {
             _this.stop();
-            //clearInterval(time);
-            //time = 0;
         });
         var resetBtn = document.createElement("button");
         resetBtn.innerText = "Reset";
@@ -99,11 +97,3 @@ var time;
 (_a = document.getElementById("addBtn")) === null || _a === void 0 ? void 0 : _a.addEventListener("click", function () {
     new cornometer();
 });
-// document.getElementById("addBtn")?.addEventListener("click", () => {
-//     const c = new cornometer();
-//     listofObjects.push(c);
-//     creatCornometerDOM(listofObjects, objectNumber);
-//     objectNumber++;
-// })
-// let objectNumber: number = 0;
-// let listofObjects: Array<cornometer> = new Array<cornometer>;

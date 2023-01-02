@@ -57,8 +57,7 @@ class cornometer {
 
         stopBtn.addEventListener("click", () => {
             this.stop();
-            //clearInterval(time);
-            //time = 0;
+            
         });
         const resetBtn = document.createElement("button");
         resetBtn.innerText = "Reset";
@@ -106,11 +105,3 @@ let time :number;
 document.getElementById("addBtn")?.addEventListener("click", () => {
     new cornometer();
 })
-// document.getElementById("addBtn")?.addEventListener("click", () => {
-//     const c = new cornometer();
-//     listofObjects.push(c);
-//     creatCornometerDOM(listofObjects, objectNumber);
-//     objectNumber++;
-// })
-// let objectNumber: number = 0;
-// let listofObjects: Array<cornometer> = new Array<cornometer>;
